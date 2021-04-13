@@ -1,0 +1,23 @@
+.our-services {
+  height: 100px;
+  width: 100%;
+  max-width: 80%;
+  height: auto;
+  position: relative;
+  right: 10px;
+  padding-bottom: 10px;
+}
+
+.Eboyo-signup {
+  margin-top: 8px;
+  padding: 9px 53px;
+  background-color: #ff742c;
+  border: 1px solid #ff742c;
+  color: #fff;
+  font-size: 19px;
+  transition: 0.4s;
+}
+
+.br {
+  border: solid red 1px;
+}
