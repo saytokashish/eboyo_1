@@ -100,6 +100,13 @@
 			transition: 0.4s;
 		}
 
+		.sec_top_nav_2 li a:hover {
+			border: solid 2px #ff742c;
+			color: #ffffff !important;
+			background-color: #ff742c !important;
+			transition: 0.4s;
+		}
+
 		.common-nav-top-cli ul li a {
 			transition: 0.4s;
 		}
@@ -1076,7 +1083,6 @@ Get running in no time.</p>
 	</div>
 </section>
 
-		<hr id="fifth">
 		<div class="section8">
 			<div class="container">
 				<div class="row">
@@ -1583,7 +1589,11 @@ Get running in no time.</p>
 				}
 			});
 		</script> -->
-
+		<script>
+			$(document).ready(function() {
+				 $(document).scrollTop($(document).height());
+			});
+		</script>
 </body>
 
 </html>
