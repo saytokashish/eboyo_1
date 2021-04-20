@@ -100,6 +100,22 @@
 			transition: 0.4s;
 		}
 
+		.btn-prime {
+    display: block;
+    background-color: orangered;
+    color: #fff !important;
+    border-radius: 32px;
+    width: max-content;
+    margin: auto;
+    padding: 10px 35px;
+    transition: 0.4s;
+    outline: none !important;
+    text-decoration: none !important;
+    border: 1px solid #ff742c;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    text-align: left;
+}
 		.sec_top_nav_2 li a:hover {
 			border: solid 2px #ff742c;
 			color: #ffffff !important;
@@ -680,7 +696,7 @@
 							<p style="line-height:2">Setup a marketplace of beauty and wellness service providers by bridging them together under a single platform.</p>
 						</div>
 						<div class="pb-2 w-100 d-flex justify-content-center">
-							<button type="submit" class="btn btn-default Eboyo-signup">Enquire Now</button>
+							<button type="submit" class="btn-prime" id="enquire-now">Enquire Now</button>
 				</div>	</div>
 				</div>
 			</section>
@@ -1408,7 +1424,10 @@ Get running in no time.</p>
 
 			// Get the button that opens the modal
 			var btn = document.getElementById("myBtn");
-
+			var EnquireNow = document.getElementById("enquire-now");
+		EnquireNow.onclick = function () {
+			modal.style.display = "block";
+		}
 			// Get the <span> element that closes the modal
 			var span = document.getElementsByClassName("close")[0];
 

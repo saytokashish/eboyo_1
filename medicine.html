@@ -75,6 +75,22 @@
 <body
 	class="home page-template page-template-EboyoNewHomepage page-template-EboyoNewHomepage-php page page-id-679 wp-embed-responsive singular image-filters-enabled">
 	<style>
+		.btn-prime {
+    display: block;
+    background-color: orangered;
+    color: #fff !important;
+    border-radius: 32px;
+    width: max-content;
+    margin: auto;
+    padding: 10px 35px;
+    transition: 0.4s;
+    outline: none !important;
+    text-decoration: none !important;
+    border: 1px solid #ff742c;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    text-align: left;
+}
 		.cli_nav_top .row {
 			margin-left: -15px;
 			margin-right: -15px;
@@ -655,8 +671,10 @@
 					cash on delivery. </p>
 				<h3 style="padding:0px 50px 80px 50px;text-align:center;font-weight:bold;margin-bottom:-80px;">Start
 					your medicine delivery business and run it from the comfort of your house</h3>
-				<a href="#" class="btn btn-primary btn-lg " style="margin:20px 0px 20px 0px;" role="button"
-					aria-disabled="true">Get Going</a>
+			<div class="d-flex justify-content-center">
+				<a href="#" class="btn-prime" style="margin:20px 0px 20px 0px;" role="button"
+				aria-disabled="true" id="get-going">Get Going</a>
+			</div>
 
 				<!-- <img style="  display: block; margin-left: auto;  margin-right: auto;  width: 20%; height:50vh;  max-width: 100%; height: auto;" src="Ragul & Anjali.png">
   <div class="row">
@@ -1390,6 +1408,10 @@
 
 		// Get the button that opens the modal
 		var btn = document.getElementById("myBtn");
+		var getGoing = document.getElementById("get-going");
+		getGoing.onclick = function () {
+			modal.style.display = "block";
+		}
 
 		// Get the <span> element that closes the modal
 		var span = document.getElementsByClassName("close")[0];
