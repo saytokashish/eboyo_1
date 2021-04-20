@@ -626,6 +626,22 @@
 						.br{
 							border: solid red 1px;
 						}
+						.btn-prime {
+    display: block;
+    background-color: orangered;
+    color: #fff !important;
+    border-radius: 32px;
+    width: max-content;
+    margin: auto;
+    padding: 10px 35px;
+    transition: 0.4s;
+    outline: none !important;
+    text-decoration: none !important;
+    border: 1px solid #ff742c;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    text-align: left;
+}
 					</style>
 					<script>
 						$(document).ready(function () {
@@ -690,7 +706,7 @@
 							<p style="line-height:2"> Give your customers Zomato like Experience and for online food ordering In the simplest manner possible		.</p>
 						</div>
 						<div class="pb-2 w-100 d-flex justify-content-center">
-							<button type="submit" class="btn btn-default Eboyo-signup">Enquire Now</button>
+							<button type="submit" class="btn-prime" id="enquire-now">Enquire Now</button>
 						</div>
 					</div>
 				</div>
@@ -1273,6 +1289,10 @@
 
 			// Get the button that opens the modal
 			var btn = document.getElementById("myBtn");
+			var enquireNow = document.getElementById("enquire-now");
+		enquireNow.onclick = function () {
+			modal.style.display = "block";
+		}
 
 			// Get the <span> element that closes the modal
 			var span = document.getElementsByClassName("close")[0];
